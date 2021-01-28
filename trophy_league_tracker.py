@@ -2,7 +2,6 @@ import requests
 from dotenv import load_dotenv
 from datetime import datetime
 import time
-import concurrent.futures
 
 load_dotenv()
 import os
@@ -30,67 +29,57 @@ TROPHY_CONDITION = {
     "total_condition": 31
 }
 
-players_tag = ["%232R8P0PVUJ"]
-bearer_token = os.environ.get("bearer_token")
-headers = {'Authorization': bearer_token, 'Content-Type' : 'application/json'}
-
-def get_player_info(url, headers):
-    result =  requests.get(url, headers=headers)
-    if result.status_code == 200:
-        return result
-    else:
-        print("Error Occured!")
-        exit()
+headers = {'Authorization': os.environ.get("bearer_token"), 'Content-Type' : 'application/json'}
+url = "https://api.brawlstars.com/v1/players/" + os.environ.get("player_tag")
 
 start_time = time.perf_counter()
 print("Obtaining data ...")
 
-result_dict = {}
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    for player in players_tag:
-        url = "https://api.brawlstars.com/v1/players/" + player
-        result = executor.submit(get_player_info, url, headers)
-        result_dict[player] = result
+r = requests.get(url, headers)
+result = None
+if r.status_code == 200:
+    result = r.json()
+elif r.status_code == 403:
+    print("Acces Denies !!")
+    exit()
 
 end_time = time.perf_counter()
 
 elapsed_time = end_time - start_time
-print(f"{len(result_dict)} data obtained in {round(elapsed_time, 2)} second(s)")
+print(f"Data obtained in {round(elapsed_time, 2)} second(s)")
 
-for key in result_dict:
-    total_trophies_lost = 0
-    total_star_point_reward = 0
-    brawler_trophies_lost = []
-    content = result_dict[key].result().json()
-    for brawler in content["brawlers"]:
-        if brawler["trophies"] > 500:
-            for i in range(TROPHY_CONDITION["total_condition"]):
-                if brawler["trophies"] >= TROPHY_CONDITION["trophies"][i][0] and brawler["trophies"] <= TROPHY_CONDITION["trophies"][i][1]:
-                    total_star_point_reward += TROPHY_CONDITION["star_point_reward"][i]
-                    total_trophies_lost += brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i]
-                    if i == (TROPHY_CONDITION["total_condition"] - 1):
-                        brawler_trophies_lost.append((
-                            brawler["name"], 
-                            brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i],
-                            brawler["trophies"],
-                            "No next checkpoint"
-                            ))
-                    else:
-                        brawler_trophies_lost.append((
-                            brawler["name"], 
-                            brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i],
-                            brawler["trophies"],
-                            TROPHY_CONDITION["trophies"][i+1][0]
-                            ))
+total_trophies_lost = 0
+total_star_point_reward = 0
+brawler_trophies_lost = []
+datetime_format = "%Y-%m-%dT%H:%M:%S"
+datetime_obj = datetime.now()
+time_stamp_str = datetime_obj.strftime(datetime_format)
+for brawler in result["brawlers"]:
+    if brawler["trophies"] > 500:
+        for i in range(TROPHY_CONDITION["total_condition"]):
+            if brawler["trophies"] >= TROPHY_CONDITION["trophies"][i][0] and brawler["trophies"] <= TROPHY_CONDITION["trophies"][i][1]:
+                total_star_point_reward += TROPHY_CONDITION["star_point_reward"][i]
+                total_trophies_lost += brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i]
+                if i == (TROPHY_CONDITION["total_condition"] - 1):
+                    brawler_trophies_lost.append((
+                        brawler["name"], 
+                        brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i],
+                        brawler["trophies"],
+                        "No next checkpoint"
+                        ))
+                else:
+                    brawler_trophies_lost.append((
+                        brawler["name"], 
+                        brawler["trophies"] - TROPHY_CONDITION["trophies_after_trophy_league_end"][i],
+                        brawler["trophies"],
+                        TROPHY_CONDITION["trophies"][i+1][0]
+                        ))
 
-    brawler_trophies_lost.sort(key=lambda x: x[1], reverse = True)
-    datetime_format = "%Y-%m-%dT%H:%M:%S"
-    datetime_obj = datetime.now()
-    time_stamp_str = datetime_obj.strftime(datetime_format)
-    print("Statistics for", content["name"], "from", time_stamp_str)
-    print("Current trophies:", content["trophies"])
-    print("Total trophies lost:", total_trophies_lost)
-    print("Trophies after trophy league end:", content["trophies"] - total_trophies_lost)
-    print("Star point reward after trophy league end:", total_star_point_reward)
-    for item in brawler_trophies_lost:
-        print(f"name: {item[0]}, trophies_lost: {item[1]}, current_trophies: {item[2]}, next checkpoint: {item[3]}")
+brawler_trophies_lost.sort(key=lambda x: x[1], reverse = True)
+print("Statistics for", result["name"], "from", time_stamp_str)
+print("Current trophies:", result["trophies"])
+print("Total trophies lost:", total_trophies_lost)
+print("Trophies after trophy league end:", result["trophies"] - total_trophies_lost)
+print("Star point reward after trophy league end:", total_star_point_reward)
+for item in brawler_trophies_lost:
+    print(f"name: {item[0]}, trophies_lost: {item[1]}, current_trophies: {item[2]}, next checkpoint: {item[3]}")
