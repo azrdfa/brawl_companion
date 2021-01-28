@@ -1,4 +1,4 @@
 bsenv
 .env
-resources/player_data/*
 sqlite
+trash
