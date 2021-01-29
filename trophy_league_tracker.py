@@ -43,6 +43,9 @@ if r.status_code == 200:
 elif r.status_code == 403:
     print("Acces Denies !!")
     exit()
+else:
+    print("Error Occured !!")
+    exit()
 
 end_time = time.perf_counter()
 
