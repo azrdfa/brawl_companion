@@ -2,6 +2,7 @@ import requests
 from dotenv import load_dotenv
 from datetime import datetime
 import time
+from tabulate import tabulate
 
 load_dotenv()
 import os
@@ -76,10 +77,16 @@ for brawler in result["brawlers"]:
                         ))
 
 brawler_trophies_lost.sort(key=lambda x: x[1], reverse = True)
+
+print("="*65)
 print("Statistics for", result["name"], "from", time_stamp_str)
 print("Current trophies:", result["trophies"])
 print("Total trophies lost:", total_trophies_lost)
 print("Trophies after trophy league end:", result["trophies"] - total_trophies_lost)
 print("Star point reward after trophy league end:", total_star_point_reward)
-for item in brawler_trophies_lost:
-    print(f"name: {item[0]}, trophies_lost: {item[1]}, current_trophies: {item[2]}, next checkpoint: {item[3]}")
+
+print("="*65)
+print(
+    tabulate(brawler_trophies_lost, 
+    headers=["Brawler", "Trophies Lost", "Current Trophies", "Next Checkpoint"])
+)
