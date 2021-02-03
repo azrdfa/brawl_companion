@@ -1,6 +1,6 @@
 # Brawl Companion
 
-brawl companion is a collection of programs that can help you plan your strategy in playing brawl stars.
+Brawl Companion is a collection of programs that can help you plan your strategy in playing brawl stars.
 
 ## Available Feature
 

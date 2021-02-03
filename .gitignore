@@ -2,3 +2,4 @@ bsenv
 .env
 sqlite
 trash
+__pycache__
