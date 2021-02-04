@@ -38,14 +38,21 @@ def get_request(url, headers, data_desc):
 class MultipleRequest():
 
     def __init__(self, urls, headers, data_desc):
-        self.lock = threading.Lock()
-        self.responses = []
+        # dependent variable
         self.urls = urls
         self.headers = headers
         self.data_desc = data_desc
+        # independent variable
+        self.success_lock = threading.Lock()
+        self.error_lock = threading.Lock()
+        self.success_responses = []
+        self.error_responses = []
     
-    def get_responses(self):
-        return self.responses
+    def get_success_responses(self):
+        return self.success_responses
+    
+    def get_error_responses(self):
+        return self.error_responses
 
     def start_requesting(self):
 
@@ -64,9 +71,10 @@ class MultipleRequest():
     def get_request(self, url):
         try:
             r = requests.get(url, self.headers)
-            result = {}
-            result["player_tag"] = url.split("/")[-2]
-            result["status"] = r.status_code
+            result = {
+                "player_tag": url.split("/")[-2],
+                "status": r.status_code
+            }
 
             if r.status_code == 200:
                 result["value"] = r.json()
@@ -84,10 +92,12 @@ class MultipleRequest():
                 elif r.status_code == 503:
                     result["value"] = "Service is temprorarily unavailable because of maintenance."
 
-            with self.lock:
-                self.responses.append(result)
+            with self.success_lock:
+                self.success_responses.append(result)
         except Exception as ex:
-            print("="*71)
-            template = "An exception of type {0} occurred. Arguments:\n{1!r}"
-            message = template.format(type(ex).__name__, ex.args)
-            print(message) # debugging
+            with self.error_lock:
+                template = "An exception of type {0} occurred. Arguments:\n{1!r}"
+                message = template.format(type(ex).__name__, ex.args)
+                self.error_responses.append(
+                    {"value": message}
+                )
