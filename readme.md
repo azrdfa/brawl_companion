@@ -10,19 +10,23 @@ Provides information about total trophy after the trophy league ends and trophy 
 
 ### 2. Brawler Recommendation
 
-Provides information about the suitable brawler for a particular map or the right map for a particular brawler.
+Provides information about the suitable brawler for a particular map.
 
 ## Step-by-step To Run The Program
 
 1. Create virtual environtment
 
-    `python -m venv venv`
+    `python -m venv env`
 
-2. Install requirements
+2. Activate virtual environtment
+
+    `source env/bin/activate`
+
+3. Install requirements
 
     `pip install -r requirements.txt`
 
-3. Create .env file with token and player_tag variable
+4. Create .env file with token and player_tag variable
 
     Token can be obtained from the brawl stars API key. Further information about brawl stars API key can be found at https://developer.brawlstars.com/. While player_tag can be obtained from brawl stars player profile.
 
@@ -31,9 +35,9 @@ Provides information about the suitable brawler for a particular map or the righ
     >token = "bearer {token}"<br>
     >player_tag = "{player_tag}"
 
-4. Run program
+5. Run program
 
-    `python {script}.py`
+    `python feature/{script}.py`
 
     The following is a list of related scripts and features.
 
