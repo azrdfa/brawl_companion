@@ -1,0 +1,665 @@
+=======================================================================
+1. {'value': 'An exception of type ConnectionError occurred. Arguments:\n(MaxRetryError("HTTPSConnectionPool(host=\'api.brawlstars.com\', port=443): Max retries exceeded with url: /v1/players/%23902UVPR2/battlelog?Authorization=Bearer+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQ3MDQzYzU0LTMxN2QtNDM2Ni1iYjZlLWJmY2NjNTEzZGM5NiIsImlhdCI6MTYxMjQyODIyMiwic3ViIjoiZGV2ZWxvcGVyLzkwMzExZjhmLTQyOGMtZTg5ZC1mOGU1LTNmOGM4ZjA2NjRiNCIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTI1LjE2MC4yMzUuMjE5Il0sInR5cGUiOiJjbGllbnQifV19.LmeH4_MQV0uOdF5LCTryp5MkdtVImMe25AlbG0XTMADStVxkXqoxBR_edzWrfO3qK_BoE61J34Zp2Xwyo3b8Vw&Content-Type=application%2Fjson (Caused by NewConnectionError(\'<urllib3.connection.HTTPSConnection object at 0x108ab2940>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known\'))"),)'}
+2. {'value': 'An exception of type ConnectionError occurred. Arguments:\n(MaxRetryError("HTTPSConnectionPool(host=\'api.brawlstars.com\', port=443): Max retries exceeded with url: /v1/players/%23LYGVVLQ/battlelog?Authorization=Bearer+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQ3MDQzYzU0LTMxN2QtNDM2Ni1iYjZlLWJmY2NjNTEzZGM5NiIsImlhdCI6MTYxMjQyODIyMiwic3ViIjoiZGV2ZWxvcGVyLzkwMzExZjhmLTQyOGMtZTg5ZC1mOGU1LTNmOGM4ZjA2NjRiNCIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTI1LjE2MC4yMzUuMjE5Il0sInR5cGUiOiJjbGllbnQifV19.LmeH4_MQV0uOdF5LCTryp5MkdtVImMe25AlbG0XTMADStVxkXqoxBR_edzWrfO3qK_BoE61J34Zp2Xwyo3b8Vw&Content-Type=application%2Fjson (Caused by NewConnectionError(\'<urllib3.connection.HTTPSConnection object at 0x108ac56a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known\'))"),)'}
+3. {'value': 'An exception of type ConnectionError occurred. Arguments:\n(MaxRetryError("HTTPSConnectionPool(host=\'api.brawlstars.com\', port=443): Max retries exceeded with url: /v1/players/%232VJVU029/battlelog?Authorization=Bearer+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQ3MDQzYzU0LTMxN2QtNDM2Ni1iYjZlLWJmY2NjNTEzZGM5NiIsImlhdCI6MTYxMjQyODIyMiwic3ViIjoiZGV2ZWxvcGVyLzkwMzExZjhmLTQyOGMtZTg5ZC1mOGU1LTNmOGM4ZjA2NjRiNCIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTI1LjE2MC4yMzUuMjE5Il0sInR5cGUiOiJjbGllbnQifV19.LmeH4_MQV0uOdF5LCTryp5MkdtVImMe25AlbG0XTMADStVxkXqoxBR_edzWrfO3qK_BoE61J34Zp2Xwyo3b8Vw&Content-Type=application%2Fjson (Caused by NewConnectionError(\'<urllib3.connection.HTTPSConnection object at 0x107e16c70>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known\'))"),)'}
+4. {'value': 'An exception of type ConnectionError occurred. Arguments:\n(MaxRetryError("HTTPSConnectionPool(host=\'api.brawlstars.com\', port=443): Max retries exceeded with url: /v1/players/%23PV88YLUC/battlelog?Authorization=Bearer+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQ3MDQzYzU0LTMxN2QtNDM2Ni1iYjZlLWJmY2NjNTEzZGM5NiIsImlhdCI6MTYxMjQyODIyMiwic3ViIjoiZGV2ZWxvcGVyLzkwMzExZjhmLTQyOGMtZTg5ZC1mOGU1LTNmOGM4ZjA2NjRiNCIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTI1LjE2MC4yMzUuMjE5Il0sInR5cGUiOiJjbGllbnQifV19.LmeH4_MQV0uOdF5LCTryp5MkdtVImMe25AlbG0XTMADStVxkXqoxBR_edzWrfO3qK_BoE61J34Zp2Xwyo3b8Vw&Content-Type=application%2Fjson (Caused by NewConnectionError(\'<urllib3.connection.HTTPSConnection object at 0x109122700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known\'))"),)'}
+=======================================================================
+1. %23PJGGV2Q80 battle log status error: 429
+2. %23QYYCUGC battle log status error: 429
+3. %23GVCV9P9Y battle log status error: 429
+4. %2328RCU0RR8 battle log status error: 429
+5. %232GCCGQ2Q battle log status error: 429
+6. %23R99GU9V8 battle log status error: 429
+7. %238GP890P8 battle log status error: 429
+8. %2390QUR2QY battle log status error: 429
+9. %2328PC0YQQJ battle log status error: 429
+10. %232YUPVG0G0 battle log status error: 429
+11. %238C0820QL0 battle log status error: 429
+12. %23GRVG2JR8 battle log status error: 429
+13. %23U9P2CUJU battle log status error: 429
+14. %232JGVVPY battle log status error: 429
+15. %2320RV28Y0V battle log status error: 429
+16. %23G9RPR28 battle log status error: 429
+17. %238J9CPPUYU battle log status error: 429
+18. %239G8RJ0 battle log status error: 429
+19. %232YYJYPCL battle log status error: 429
+20. %23PU9PRJ8 battle log status error: 429
+21. %23Y28UCY0R battle log status error: 429
+22. %23YVC0QRVP battle log status error: 429
+23. %23PJUVPVQ8 battle log status error: 429
+=======================================================================
+1. Unrecognized battle with KeyError: ('mode',)
+2. Unrecognized battle with KeyError: ('mode',)
+3. Unrecognized battle with KeyError: ('mode',)
+4. Unrecognized battle with KeyError: ('mode',)
+5. Unrecognized battle with KeyError: ('mode',)
+6. Unrecognized battle with KeyError: ('mode',)
+7. Unrecognized battle with KeyError: ('mode',)
+8. Unrecognized battle with KeyError: ('mode',)
+9. Unrecognized battle with KeyError: ('mode',)
+10. Unrecognized battle with KeyError: ('mode',)
+11. Unrecognized battle with KeyError: ('mode',)
+12. Unrecognized battle with KeyError: ('mode',)
+13. Unrecognized battle with KeyError: ('mode',)
+14. Unrecognized battle with KeyError: ('mode',)
+15. Unrecognized battle with KeyError: ('mode',)
+16. Unrecognized battle with KeyError: ('mode',)
+17. Unrecognized battle with KeyError: ('mode',)
+18. Unrecognized battle with KeyError: ('mode',)
+19. Unrecognized battle with KeyError: ('mode',)
+20. Unrecognized battle with KeyError: ('mode',)
+21. Unrecognized battle with KeyError: ('mode',)
+22. Unrecognized battle with KeyError: ('mode',)
+23. Unrecognized battle with KeyError: ('mode',)
+24. Unrecognized battle with KeyError: ('mode',)
+25. Unrecognized battle with KeyError: ('mode',)
+26. Unrecognized battle with KeyError: ('mode',)
+27. Unrecognized battle with KeyError: ('mode',)
+28. Unrecognized battle with KeyError: ('mode',)
+29. Unrecognized battle with KeyError: ('mode',)
+30. Unrecognized battle with KeyError: ('mode',)
+31. Unrecognized battle with KeyError: ('mode',)
+32. Unrecognized battle with KeyError: ('mode',)
+33. Unrecognized battle with KeyError: ('mode',)
+34. Unrecognized battle with KeyError: ('mode',)
+35. Unrecognized battle with KeyError: ('mode',)
+36. Unrecognized battle with KeyError: ('mode',)
+37. Unrecognized battle with KeyError: ('mode',)
+38. Unrecognized battle with KeyError: ('mode',)
+39. Unrecognized battle with KeyError: ('mode',)
+40. Unrecognized battle with KeyError: ('mode',)
+41. Unrecognized battle with KeyError: ('mode',)
+42. Unrecognized battle with KeyError: ('mode',)
+43. Unrecognized battle with KeyError: ('mode',)
+44. Unrecognized battle with KeyError: ('mode',)
+45. Unrecognized battle with KeyError: ('mode',)
+46. Unrecognized battle with KeyError: ('mode',)
+47. Unrecognized battle with KeyError: ('mode',)
+48. Unrecognized battle with KeyError: ('mode',)
+49. Unrecognized battle with KeyError: ('mode',)
+50. Unrecognized battle with KeyError: ('mode',)
+51. Unrecognized battle with KeyError: ('mode',)
+52. Unrecognized battle with KeyError: ('mode',)
+53. Unrecognized battle with KeyError: ('mode',)
+54. Unrecognized battle with KeyError: ('mode',)
+55. Unrecognized battle with KeyError: ('mode',)
+56. Unrecognized battle with KeyError: ('mode',)
+57. Unrecognized battle with KeyError: ('mode',)
+58. Unrecognized battle with KeyError: ('mode',)
+59. Unrecognized battle with KeyError: ('mode',)
+60. Unrecognized battle with KeyError: ('mode',)
+61. Unrecognized battle with KeyError: ('mode',)
+62. Unrecognized battle with KeyError: ('mode',)
+63. Unrecognized battle with KeyError: ('mode',)
+64. Unrecognized battle with KeyError: ('mode',)
+65. Unrecognized battle with KeyError: ('mode',)
+66. Unrecognized battle with KeyError: ('mode',)
+=======================================================================
+1. Unrecognized battle mode: heist
+2. Unrecognized battle mode: heist
+3. Unrecognized battle mode: heist
+4. Unrecognized battle mode: gemGrab
+5. Unrecognized battle mode: heist
+6. Unrecognized battle mode: heist
+7. Unrecognized battle mode: heist
+8. Unrecognized battle mode: bounty
+9. Unrecognized battle mode: bounty
+10. Unrecognized battle mode: bounty
+11. Unrecognized battle mode: bounty
+12. Unrecognized battle mode: bounty
+13. Unrecognized battle mode: bounty
+14. Unrecognized battle mode: bounty
+15. Unrecognized battle mode: gemGrab
+16. Unrecognized battle mode: heist
+17. Unrecognized battle mode: heist
+18. Unrecognized battle mode: heist
+19. Unrecognized battle mode: siege
+20. Unrecognized battle mode: heist
+21. Unrecognized battle mode: heist
+22. Unrecognized battle mode: heist
+23. Unrecognized battle mode: heist
+24. Unrecognized battle mode: heist
+25. Unrecognized battle mode: heist
+26. Unrecognized battle mode: heist
+27. Unrecognized battle mode: brawlBall
+28. Unrecognized battle mode: brawlBall
+29. Unrecognized battle mode: brawlBall
+30. Unrecognized battle mode: brawlBall
+31. Unrecognized battle mode: brawlBall
+32. Unrecognized battle mode: brawlBall
+33. Unrecognized battle mode: brawlBall
+34. Unrecognized battle mode: siege
+35. Unrecognized battle mode: bounty
+36. Unrecognized battle mode: bounty
+37. Unrecognized battle mode: bounty
+38. Unrecognized battle mode: brawlBall
+39. Unrecognized battle mode: brawlBall
+40. Unrecognized battle mode: brawlBall
+41. Unrecognized battle mode: brawlBall
+42. Unrecognized battle mode: brawlBall
+43. Unrecognized battle mode: gemGrab
+44. Unrecognized battle mode: gemGrab
+45. Unrecognized battle mode: gemGrab
+46. Unrecognized battle mode: siege
+47. Unrecognized battle mode: siege
+48. Unrecognized battle mode: siege
+49. Unrecognized battle mode: siege
+50. Unrecognized battle mode: heist
+51. Unrecognized battle mode: heist
+52. Unrecognized battle mode: heist
+53. Unrecognized battle mode: heist
+54. Unrecognized battle mode: bounty
+55. Unrecognized battle mode: bounty
+56. Unrecognized battle mode: bounty
+57. Unrecognized battle mode: bounty
+58. Unrecognized battle mode: brawlBall
+59. Unrecognized battle mode: brawlBall
+60. Unrecognized battle mode: brawlBall
+61. Unrecognized battle mode: brawlBall
+62. Unrecognized battle mode: brawlBall
+63. Unrecognized battle mode: gemGrab
+64. Unrecognized battle mode: gemGrab
+65. Unrecognized battle mode: gemGrab
+66. Unrecognized battle mode: gemGrab
+67. Unrecognized battle mode: hotZone
+68. Unrecognized battle mode: hotZone
+69. Unrecognized battle mode: hotZone
+70. Unrecognized battle mode: hotZone
+71. Unrecognized battle mode: heist
+72. Unrecognized battle mode: heist
+73. Unrecognized battle mode: heist
+74. Unrecognized battle mode: heist
+75. Unrecognized battle mode: heist
+76. Unrecognized battle mode: gemGrab
+77. Unrecognized battle mode: gemGrab
+78. Unrecognized battle mode: gemGrab
+79. Unrecognized battle mode: heist
+80. Unrecognized battle mode: heist
+81. Unrecognized battle mode: heist
+82. Unrecognized battle mode: gemGrab
+83. Unrecognized battle mode: gemGrab
+84. Unrecognized battle mode: siege
+85. Unrecognized battle mode: siege
+86. Unrecognized battle mode: siege
+87. Unrecognized battle mode: heist
+88. Unrecognized battle mode: heist
+89. Unrecognized battle mode: heist
+90. Unrecognized battle mode: heist
+91. Unrecognized battle mode: heist
+92. Unrecognized battle mode: bounty
+93. Unrecognized battle mode: bounty
+94. Unrecognized battle mode: bounty
+95. Unrecognized battle mode: bounty
+96. Unrecognized battle mode: bounty
+97. Unrecognized battle mode: brawlBall
+98. Unrecognized battle mode: siege
+99. Unrecognized battle mode: siege
+100. Unrecognized battle mode: brawlBall
+101. Unrecognized battle mode: brawlBall
+102. Unrecognized battle mode: brawlBall
+103. Unrecognized battle mode: brawlBall
+104. Unrecognized battle mode: brawlBall
+105. Unrecognized battle mode: brawlBall
+106. Unrecognized battle mode: brawlBall
+107. Unrecognized battle mode: brawlBall
+108. Unrecognized battle mode: brawlBall
+109. Unrecognized battle mode: brawlBall
+110. Unrecognized battle mode: brawlBall
+111. Unrecognized battle mode: brawlBall
+112. Unrecognized battle mode: brawlBall
+113. Unrecognized battle mode: brawlBall
+114. Unrecognized battle mode: brawlBall
+115. Unrecognized battle mode: brawlBall
+116. Unrecognized battle mode: brawlBall
+117. Unrecognized battle mode: brawlBall
+118. Unrecognized battle mode: brawlBall
+119. Unrecognized battle mode: brawlBall
+120. Unrecognized battle mode: brawlBall
+121. Unrecognized battle mode: brawlBall
+122. Unrecognized battle mode: brawlBall
+123. Unrecognized battle mode: brawlBall
+124. Unrecognized battle mode: brawlBall
+125. Unrecognized battle mode: heist
+126. Unrecognized battle mode: heist
+127. Unrecognized battle mode: heist
+128. Unrecognized battle mode: hotZone
+129. Unrecognized battle mode: hotZone
+130. Unrecognized battle mode: hotZone
+131. Unrecognized battle mode: siege
+132. Unrecognized battle mode: siege
+133. Unrecognized battle mode: siege
+134. Unrecognized battle mode: siege
+135. Unrecognized battle mode: siege
+136. Unrecognized battle mode: siege
+137. Unrecognized battle mode: brawlBall
+138. Unrecognized battle mode: brawlBall
+139. Unrecognized battle mode: brawlBall
+140. Unrecognized battle mode: brawlBall
+141. Unrecognized battle mode: brawlBall
+142. Unrecognized battle mode: bounty
+143. Unrecognized battle mode: bounty
+144. Unrecognized battle mode: bounty
+145. Unrecognized battle mode: bounty
+146. Unrecognized battle mode: heist
+147. Unrecognized battle mode: heist
+148. Unrecognized battle mode: heist
+149. Unrecognized battle mode: heist
+150. Unrecognized battle mode: gemGrab
+151. Unrecognized battle mode: gemGrab
+152. Unrecognized battle mode: gemGrab
+153. Unrecognized battle mode: gemGrab
+154. Unrecognized battle mode: gemGrab
+155. Unrecognized battle mode: gemGrab
+156. Unrecognized battle mode: gemGrab
+157. Unrecognized battle mode: gemGrab
+158. Unrecognized battle mode: hotZone
+159. Unrecognized battle mode: hotZone
+160. Unrecognized battle mode: hotZone
+161. Unrecognized battle mode: siege
+162. Unrecognized battle mode: siege
+163. Unrecognized battle mode: siege
+164. Unrecognized battle mode: bounty
+165. Unrecognized battle mode: bounty
+166. Unrecognized battle mode: bounty
+167. Unrecognized battle mode: bounty
+168. Unrecognized battle mode: bounty
+169. Unrecognized battle mode: heist
+170. Unrecognized battle mode: heist
+171. Unrecognized battle mode: heist
+172. Unrecognized battle mode: brawlBall
+173. Unrecognized battle mode: brawlBall
+174. Unrecognized battle mode: brawlBall
+175. Unrecognized battle mode: gemGrab
+176. Unrecognized battle mode: gemGrab
+177. Unrecognized battle mode: gemGrab
+178. Unrecognized battle mode: heist
+179. Unrecognized battle mode: heist
+180. Unrecognized battle mode: heist
+181. Unrecognized battle mode: heist
+182. Unrecognized battle mode: gemGrab
+183. Unrecognized battle mode: gemGrab
+184. Unrecognized battle mode: gemGrab
+185. Unrecognized battle mode: heist
+186. Unrecognized battle mode: bounty
+187. Unrecognized battle mode: bounty
+188. Unrecognized battle mode: bounty
+189. Unrecognized battle mode: bounty
+190. Unrecognized battle mode: bounty
+191. Unrecognized battle mode: bounty
+192. Unrecognized battle mode: bounty
+193. Unrecognized battle mode: bounty
+194. Unrecognized battle mode: bounty
+195. Unrecognized battle mode: bounty
+196. Unrecognized battle mode: bounty
+197. Unrecognized battle mode: bounty
+198. Unrecognized battle mode: gemGrab
+199. Unrecognized battle mode: gemGrab
+200. Unrecognized battle mode: gemGrab
+201. Unrecognized battle mode: gemGrab
+202. Unrecognized battle mode: gemGrab
+203. Unrecognized battle mode: gemGrab
+204. Unrecognized battle mode: gemGrab
+205. Unrecognized battle mode: bounty
+206. Unrecognized battle mode: bounty
+207. Unrecognized battle mode: bounty
+208. Unrecognized battle mode: bounty
+209. Unrecognized battle mode: bounty
+210. Unrecognized battle mode: bounty
+211. Unrecognized battle mode: bounty
+212. Unrecognized battle mode: heist
+213. Unrecognized battle mode: heist
+214. Unrecognized battle mode: heist
+215. Unrecognized battle mode: bounty
+216. Unrecognized battle mode: bounty
+217. Unrecognized battle mode: bounty
+218. Unrecognized battle mode: bounty
+219. Unrecognized battle mode: bounty
+220. Unrecognized battle mode: bounty
+221. Unrecognized battle mode: bounty
+222. Unrecognized battle mode: brawlBall
+223. Unrecognized battle mode: bounty
+224. Unrecognized battle mode: bounty
+225. Unrecognized battle mode: bounty
+226. Unrecognized battle mode: bounty
+227. Unrecognized battle mode: bounty
+228. Unrecognized battle mode: bounty
+229. Unrecognized battle mode: bounty
+230. Unrecognized battle mode: bounty
+231. Unrecognized battle mode: bounty
+232. Unrecognized battle mode: bounty
+233. Unrecognized battle mode: bounty
+234. Unrecognized battle mode: bounty
+235. Unrecognized battle mode: bounty
+236. Unrecognized battle mode: brawlBall
+237. Unrecognized battle mode: bounty
+238. Unrecognized battle mode: bounty
+239. Unrecognized battle mode: bounty
+240. Unrecognized battle mode: siege
+241. Unrecognized battle mode: siege
+242. Unrecognized battle mode: siege
+243. Unrecognized battle mode: bounty
+244. Unrecognized battle mode: bounty
+245. Unrecognized battle mode: siege
+246. Unrecognized battle mode: siege
+247. Unrecognized battle mode: siege
+248. Unrecognized battle mode: bounty
+249. Unrecognized battle mode: bounty
+250. Unrecognized battle mode: bounty
+251. Unrecognized battle mode: bounty
+252. Unrecognized battle mode: bounty
+253. Unrecognized battle mode: bounty
+254. Unrecognized battle mode: heist
+255. Unrecognized battle mode: heist
+256. Unrecognized battle mode: heist
+257. Unrecognized battle mode: siege
+258. Unrecognized battle mode: bounty
+259. Unrecognized battle mode: bounty
+260. Unrecognized battle mode: brawlBall
+261. Unrecognized battle mode: brawlBall
+262. Unrecognized battle mode: brawlBall
+263. Unrecognized battle mode: gemGrab
+264. Unrecognized battle mode: gemGrab
+265. Unrecognized battle mode: gemGrab
+266. Unrecognized battle mode: brawlBall
+267. Unrecognized battle mode: brawlBall
+268. Unrecognized battle mode: brawlBall
+269. Unrecognized battle mode: gemGrab
+270. Unrecognized battle mode: gemGrab
+271. Unrecognized battle mode: brawlBall
+272. Unrecognized battle mode: brawlBall
+273. Unrecognized battle mode: brawlBall
+274. Unrecognized battle mode: gemGrab
+275. Unrecognized battle mode: brawlBall
+276. Unrecognized battle mode: gemGrab
+277. Unrecognized battle mode: gemGrab
+278. Unrecognized battle mode: gemGrab
+279. Unrecognized battle mode: heist
+280. Unrecognized battle mode: heist
+281. Unrecognized battle mode: heist
+282. Unrecognized battle mode: siege
+283. Unrecognized battle mode: siege
+284. Unrecognized battle mode: siege
+285. Unrecognized battle mode: heist
+286. Unrecognized battle mode: heist
+287. Unrecognized battle mode: heist
+288. Unrecognized battle mode: bounty
+289. Unrecognized battle mode: bounty
+290. Unrecognized battle mode: siege
+291. Unrecognized battle mode: siege
+292. Unrecognized battle mode: siege
+293. Unrecognized battle mode: heist
+294. Unrecognized battle mode: heist
+295. Unrecognized battle mode: heist
+296. Unrecognized battle mode: gemGrab
+297. Unrecognized battle mode: gemGrab
+298. Unrecognized battle mode: gemGrab
+299. Unrecognized battle mode: heist
+300. Unrecognized battle mode: heist
+301. Unrecognized battle mode: heist
+302. Unrecognized battle mode: gemGrab
+303. Unrecognized battle mode: gemGrab
+304. Unrecognized battle mode: gemGrab
+305. Unrecognized battle mode: brawlBall
+306. Unrecognized battle mode: brawlBall
+307. Unrecognized battle mode: bounty
+308. Unrecognized battle mode: bounty
+309. Unrecognized battle mode: gemGrab
+310. Unrecognized battle mode: gemGrab
+311. Unrecognized battle mode: heist
+312. Unrecognized battle mode: heist
+313. Unrecognized battle mode: heist
+314. Unrecognized battle mode: siege
+315. Unrecognized battle mode: siege
+316. Unrecognized battle mode: siege
+317. Unrecognized battle mode: bounty
+318. Unrecognized battle mode: bounty
+319. Unrecognized battle mode: heist
+320. Unrecognized battle mode: gemGrab
+321. Unrecognized battle mode: gemGrab
+322. Unrecognized battle mode: gemGrab
+323. Unrecognized battle mode: gemGrab
+324. Unrecognized battle mode: gemGrab
+325. Unrecognized battle mode: gemGrab
+326. Unrecognized battle mode: gemGrab
+327. Unrecognized battle mode: gemGrab
+328. Unrecognized battle mode: gemGrab
+329. Unrecognized battle mode: gemGrab
+330. Unrecognized battle mode: gemGrab
+331. Unrecognized battle mode: gemGrab
+332. Unrecognized battle mode: gemGrab
+333. Unrecognized battle mode: gemGrab
+334. Unrecognized battle mode: gemGrab
+335. Unrecognized battle mode: gemGrab
+336. Unrecognized battle mode: gemGrab
+337. Unrecognized battle mode: gemGrab
+338. Unrecognized battle mode: gemGrab
+339. Unrecognized battle mode: gemGrab
+340. Unrecognized battle mode: gemGrab
+341. Unrecognized battle mode: gemGrab
+342. Unrecognized battle mode: gemGrab
+343. Unrecognized battle mode: gemGrab
+344. Unrecognized battle mode: gemGrab
+345. Unrecognized battle mode: heist
+346. Unrecognized battle mode: soloShowdown
+347. Unrecognized battle mode: soloShowdown
+348. Unrecognized battle mode: gemGrab
+349. Unrecognized battle mode: gemGrab
+350. Unrecognized battle mode: heist
+351. Unrecognized battle mode: heist
+352. Unrecognized battle mode: heist
+353. Unrecognized battle mode: gemGrab
+354. Unrecognized battle mode: gemGrab
+355. Unrecognized battle mode: gemGrab
+356. Unrecognized battle mode: gemGrab
+357. Unrecognized battle mode: gemGrab
+358. Unrecognized battle mode: gemGrab
+359. Unrecognized battle mode: gemGrab
+360. Unrecognized battle mode: brawlBall
+361. Unrecognized battle mode: brawlBall
+362. Unrecognized battle mode: brawlBall
+363. Unrecognized battle mode: brawlBall
+364. Unrecognized battle mode: brawlBall
+365. Unrecognized battle mode: brawlBall
+366. Unrecognized battle mode: brawlBall
+367. Unrecognized battle mode: brawlBall
+368. Unrecognized battle mode: bounty
+369. Unrecognized battle mode: heist
+370. Unrecognized battle mode: heist
+371. Unrecognized battle mode: heist
+372. Unrecognized battle mode: siege
+373. Unrecognized battle mode: siege
+374. Unrecognized battle mode: siege
+375. Unrecognized battle mode: siege
+376. Unrecognized battle mode: brawlBall
+377. Unrecognized battle mode: brawlBall
+378. Unrecognized battle mode: brawlBall
+379. Unrecognized battle mode: brawlBall
+380. Unrecognized battle mode: brawlBall
+381. Unrecognized battle mode: gemGrab
+382. Unrecognized battle mode: gemGrab
+383. Unrecognized battle mode: gemGrab
+384. Unrecognized battle mode: gemGrab
+385. Unrecognized battle mode: gemGrab
+386. Unrecognized battle mode: gemGrab
+387. Unrecognized battle mode: gemGrab
+388. Unrecognized battle mode: gemGrab
+389. Unrecognized battle mode: gemGrab
+390. Unrecognized battle mode: gemGrab
+391. Unrecognized battle mode: gemGrab
+392. Unrecognized battle mode: gemGrab
+393. Unrecognized battle mode: gemGrab
+394. Unrecognized battle mode: gemGrab
+395. Unrecognized battle mode: heist
+396. Unrecognized battle mode: heist
+397. Unrecognized battle mode: heist
+398. Unrecognized battle mode: hotZone
+399. Unrecognized battle mode: hotZone
+400. Unrecognized battle mode: hotZone
+401. Unrecognized battle mode: hotZone
+402. Unrecognized battle mode: hotZone
+403. Unrecognized battle mode: hotZone
+404. Unrecognized battle mode: bounty
+405. Unrecognized battle mode: bounty
+406. Unrecognized battle mode: bounty
+407. Unrecognized battle mode: bounty
+408. Unrecognized battle mode: brawlBall
+409. Unrecognized battle mode: brawlBall
+410. Unrecognized battle mode: brawlBall
+411. Unrecognized battle mode: brawlBall
+412. Unrecognized battle mode: brawlBall
+413. Unrecognized battle mode: brawlBall
+414. Unrecognized battle mode: brawlBall
+415. Unrecognized battle mode: brawlBall
+416. Unrecognized battle mode: brawlBall
+417. Unrecognized battle mode: brawlBall
+418. Unrecognized battle mode: soloShowdown
+419. Unrecognized battle mode: heist
+420. Unrecognized battle mode: hotZone
+421. Unrecognized battle mode: siege
+422. Unrecognized battle mode: brawlBall
+423. Unrecognized battle mode: bounty
+424. Unrecognized battle mode: gemGrab
+425. Unrecognized battle mode: gemGrab
+426. Unrecognized battle mode: gemGrab
+427. Unrecognized battle mode: gemGrab
+428. Unrecognized battle mode: gemGrab
+429. Unrecognized battle mode: gemGrab
+430. Unrecognized battle mode: gemGrab
+431. Unrecognized battle mode: gemGrab
+432. Unrecognized battle mode: siege
+433. Unrecognized battle mode: siege
+434. Unrecognized battle mode: siege
+435. Unrecognized battle mode: bounty
+436. Unrecognized battle mode: bounty
+437. Unrecognized battle mode: bounty
+438. Unrecognized battle mode: bounty
+439. Unrecognized battle mode: bounty
+440. Unrecognized battle mode: bounty
+441. Unrecognized battle mode: bounty
+442. Unrecognized battle mode: bounty
+443. Unrecognized battle mode: bounty
+444. Unrecognized battle mode: bounty
+445. Unrecognized battle mode: bounty
+446. Unrecognized battle mode: brawlBall
+447. Unrecognized battle mode: bounty
+448. Unrecognized battle mode: bounty
+449. Unrecognized battle mode: bounty
+450. Unrecognized battle mode: bounty
+451. Unrecognized battle mode: bounty
+452. Unrecognized battle mode: bounty
+453. Unrecognized battle mode: bounty
+454. Unrecognized battle mode: bounty
+455. Unrecognized battle mode: siege
+456. Unrecognized battle mode: siege
+457. Unrecognized battle mode: siege
+458. Unrecognized battle mode: siege
+459. Unrecognized battle mode: siege
+460. Unrecognized battle mode: bounty
+461. Unrecognized battle mode: bounty
+462. Unrecognized battle mode: bounty
+463. Unrecognized battle mode: bounty
+464. Unrecognized battle mode: bounty
+465. Unrecognized battle mode: heist
+466. Unrecognized battle mode: heist
+467. Unrecognized battle mode: heist
+468. Unrecognized battle mode: heist
+469. Unrecognized battle mode: heist
+470. Unrecognized battle mode: gemGrab
+471. Unrecognized battle mode: gemGrab
+472. Unrecognized battle mode: gemGrab
+473. Unrecognized battle mode: heist
+474. Unrecognized battle mode: heist
+475. Unrecognized battle mode: heist
+476. Unrecognized battle mode: siege
+477. Unrecognized battle mode: siege
+478. Unrecognized battle mode: siege
+479. Unrecognized battle mode: siege
+480. Unrecognized battle mode: heist
+481. Unrecognized battle mode: heist
+482. Unrecognized battle mode: heist
+483. Unrecognized battle mode: heist
+484. Unrecognized battle mode: heist
+485. Unrecognized battle mode: heist
+486. Unrecognized battle mode: heist
+487. Unrecognized battle mode: heist
+488. Unrecognized battle mode: heist
+489. Unrecognized battle mode: bounty
+490. Unrecognized battle mode: bounty
+491. Unrecognized battle mode: bounty
+492. Unrecognized battle mode: siege
+493. Unrecognized battle mode: siege
+494. Unrecognized battle mode: siege
+495. Unrecognized battle mode: siege
+496. Unrecognized battle mode: brawlBall
+497. Unrecognized battle mode: brawlBall
+498. Unrecognized battle mode: brawlBall
+499. Unrecognized battle mode: brawlBall
+500. Unrecognized battle mode: brawlBall
+501. Unrecognized battle mode: gemGrab
+502. Unrecognized battle mode: gemGrab
+503. Unrecognized battle mode: gemGrab
+504. Unrecognized battle mode: gemGrab
+505. Unrecognized battle mode: gemGrab
+506. Unrecognized battle mode: gemGrab
+507. Unrecognized battle mode: heist
+508. Unrecognized battle mode: heist
+509. Unrecognized battle mode: heist
+510. Unrecognized battle mode: brawlBall
+511. Unrecognized battle mode: brawlBall
+512. Unrecognized battle mode: brawlBall
+513. Unrecognized battle mode: brawlBall
+514. Unrecognized battle mode: heist
+515. Unrecognized battle mode: heist
+516. Unrecognized battle mode: heist
+517. Unrecognized battle mode: gemGrab
+518. Unrecognized battle mode: gemGrab
+519. Unrecognized battle mode: gemGrab
+520. Unrecognized battle mode: gemGrab
+521. Unrecognized battle mode: gemGrab
+522. Unrecognized battle mode: bounty
+523. Unrecognized battle mode: brawlBall
+524. Unrecognized battle mode: brawlBall
+525. Unrecognized battle mode: brawlBall
+526. Unrecognized battle mode: brawlBall
+527. Unrecognized battle mode: brawlBall
+528. Unrecognized battle mode: brawlBall
+529. Unrecognized battle mode: brawlBall
+530. Unrecognized battle mode: brawlBall
+531. Unrecognized battle mode: brawlBall
+532. Unrecognized battle mode: brawlBall
+533. Unrecognized battle mode: heist
+534. Unrecognized battle mode: heist
+535. Unrecognized battle mode: heist
+536. Unrecognized battle mode: heist
+537. Unrecognized battle mode: heist
+538. Unrecognized battle mode: heist
+539. Unrecognized battle mode: heist
+540. Unrecognized battle mode: brawlBall
+541. Unrecognized battle mode: brawlBall
+542. Unrecognized battle mode: brawlBall
+543. Unrecognized battle mode: brawlBall
+544. Unrecognized battle mode: brawlBall
+545. Unrecognized battle mode: brawlBall
+546. Unrecognized battle mode: brawlBall
+547. Unrecognized battle mode: gemGrab
+548. Unrecognized battle mode: gemGrab
+549. Unrecognized battle mode: gemGrab
+550. Unrecognized battle mode: heist
+551. Unrecognized battle mode: heist
+552. Unrecognized battle mode: heist
+553. Unrecognized battle mode: heist
+554. Unrecognized battle mode: heist
+555. Unrecognized battle mode: bounty
+556. Unrecognized battle mode: bounty
+557. Unrecognized battle mode: bounty
+558. Unrecognized battle mode: bounty
+559. Unrecognized battle mode: bounty
+560. Unrecognized battle mode: bounty
+561. Unrecognized battle mode: brawlBall
+562. Unrecognized battle mode: brawlBall
+563. Unrecognized battle mode: brawlBall
+564. Unrecognized battle mode: brawlBall
+565. Unrecognized battle mode: brawlBall
+566. Unrecognized battle mode: brawlBall
+567. Unrecognized battle mode: bounty
+568. Unrecognized battle mode: bounty
