@@ -1,0 +1,91 @@
+{
+    "battleTime": "20210203T052409.000Z",
+    "event": {
+        "id": 15000351,
+        "mode": "hotZone",
+        "map": "Magnetic Field"
+    },
+    "battle": {
+        "mode": "hotZone",
+        "type": "ranked",
+        "result": "defeat",
+        "duration": 128,
+        "trophyChange": -6,
+        "starPlayer": {
+            "tag": "#2YG9VQV2G",
+            "name": "Sweaty Tryhard",
+            "brawler": {
+                "id": 16000037,
+                "name": "SPROUT",
+                "power": 10,
+                "trophies": 469
+            }
+        },
+        "teams": [
+            [
+                {
+                    "tag": "#2RYR88QGG",
+                    "name": "ThatOneDude",
+                    "brawler": {
+                        "id": 16000026,
+                        "name": "BIBI",
+                        "power": 9,
+                        "trophies": 516
+                    }
+                },
+                {
+                    "tag": "#2YG9VQV2G",
+                    "name": "Sweaty Tryhard",
+                    "brawler": {
+                        "id": 16000037,
+                        "name": "SPROUT",
+                        "power": 10,
+                        "trophies": 469
+                    }
+                },
+                {
+                    "tag": "#2QR92JVQJ",
+                    "name": "클래시로얄",
+                    "brawler": {
+                        "id": 16000039,
+                        "name": "COLETTE",
+                        "power": 10,
+                        "trophies": 518
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#VCY2P98R",
+                    "name": "Zerox",
+                    "brawler": {
+                        "id": 16000016,
+                        "name": "PAM",
+                        "power": 6,
+                        "trophies": 458
+                    }
+                },
+                {
+                    "tag": "#8GRC9U99",
+                    "name": "ketakketak",
+                    "brawler": {
+                        "id": 16000022,
+                        "name": "TICK",
+                        "power": 8,
+                        "trophies": 502
+                    }
+                },
+                {
+                    "tag": "#2RL9VGJ9V",
+                    "name": "Legendary Leo",
+                    "brawler": {
+                        "id": 16000037,
+                        "name": "SPROUT",
+                        "power": 6,
+                        "trophies": 482
+                    }
+                }
+            ]
+        ]
+    }
+}

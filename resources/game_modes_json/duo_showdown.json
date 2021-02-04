@@ -1,0 +1,126 @@
+{
+    "battleTime": "20210129T071133.000Z",
+    "event": {
+        "id": 15000096,
+        "mode": "duoShowdown",
+        "map": "Stormy Plains"
+    },
+    "battle": {
+        "mode": "duoShowdown",
+        "type": "ranked",
+        "rank": 1,
+        "trophyChange": 9,
+        "teams": [
+            [
+                {
+                    "tag": "#22LRV828G",
+                    "name": "wj.viejo",
+                    "brawler": {
+                        "id": 16000027,
+                        "name": "8-BIT",
+                        "power": 7,
+                        "trophies": 299
+                    }
+                },
+                {
+                    "tag": "#8GRC9U99",
+                    "name": "ketakketak",
+                    "brawler": {
+                        "id": 16000036,
+                        "name": "NANI",
+                        "power": 7,
+                        "trophies": 322
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#2VCLYYRUU",
+                    "name": "노랑독살",
+                    "brawler": {
+                        "id": 16000008,
+                        "name": "NITA",
+                        "power": 9,
+                        "trophies": 325
+                    }
+                },
+                {
+                    "tag": "#Y0U0CVLGY",
+                    "name": "초록독살",
+                    "brawler": {
+                        "id": 16000009,
+                        "name": "DYNAMIKE",
+                        "power": 5,
+                        "trophies": 291
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#8P2CQQVVY",
+                    "name": "캡틴아메리카 노",
+                    "brawler": {
+                        "id": 16000010,
+                        "name": "EL PRIMO",
+                        "power": 7,
+                        "trophies": 400
+                    }
+                },
+                {
+                    "tag": "#9CY8UUJRL",
+                    "name": "저랑 티밍하실래요?",
+                    "brawler": {
+                        "id": 16000021,
+                        "name": "GENE",
+                        "power": 1,
+                        "trophies": 52
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#8L8L8PP9G",
+                    "name": "ANSONWO",
+                    "brawler": {
+                        "id": 16000013,
+                        "name": "POCO",
+                        "power": 8,
+                        "trophies": 399
+                    }
+                },
+                {
+                    "tag": "#PCL00U2U9",
+                    "name": "Noob123",
+                    "brawler": {
+                        "id": 16000021,
+                        "name": "GENE",
+                        "power": 1,
+                        "trophies": 144
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#2GJJ8RLCP",
+                    "name": "다비",
+                    "brawler": {
+                        "id": 16000029,
+                        "name": "BEA",
+                        "power": 5,
+                        "trophies": 316
+                    }
+                },
+                {
+                    "tag": "#82PPU0JCL",
+                    "name": "김건율",
+                    "brawler": {
+                        "id": 16000011,
+                        "name": "MORTIS",
+                        "power": 6,
+                        "trophies": 321
+                    }
+                }
+            ]
+        ]
+    }
+}

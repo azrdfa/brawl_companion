@@ -1,0 +1,91 @@
+{
+    "battleTime": "20210128T142747.000Z",
+    "event": {
+        "id": 15000083,
+        "mode": "bounty",
+        "map": "Dry Season"
+    },
+    "battle": {
+        "mode": "bounty",
+        "type": "ranked",
+        "result": "defeat",
+        "duration": 120,
+        "trophyChange": -4,
+        "starPlayer": {
+            "tag": "#2GYRRVR2G",
+            "name": "돼지저금통",
+            "brawler": {
+                "id": 16000001,
+                "name": "COLT",
+                "power": 10,
+                "trophies": 611
+            }
+        },
+        "teams": [
+            [
+                {
+                    "tag": "#2R8P0PVUJ",
+                    "name": "ketikketik",
+                    "brawler": {
+                        "id": 16000029,
+                        "name": "BEA",
+                        "power": 9,
+                        "trophies": 617
+                    }
+                },
+                {
+                    "tag": "#8GRC9U99",
+                    "name": "ketakketak",
+                    "brawler": {
+                        "id": 16000036,
+                        "name": "NANI",
+                        "power": 7,
+                        "trophies": 322
+                    }
+                },
+                {
+                    "tag": "#8VUL02P",
+                    "name": "Kinetic",
+                    "brawler": {
+                        "id": 16000031,
+                        "name": "MR. P",
+                        "power": 10,
+                        "trophies": 630
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#2GYRRVR2G",
+                    "name": "돼지저금통",
+                    "brawler": {
+                        "id": 16000001,
+                        "name": "COLT",
+                        "power": 10,
+                        "trophies": 611
+                    }
+                },
+                {
+                    "tag": "#RLVJRGQQ",
+                    "name": "Jasper",
+                    "brawler": {
+                        "id": 16000022,
+                        "name": "TICK",
+                        "power": 10,
+                        "trophies": 599
+                    }
+                },
+                {
+                    "tag": "#2LVQ2PUR8",
+                    "name": "零翎",
+                    "brawler": {
+                        "id": 16000023,
+                        "name": "LEON",
+                        "power": 10,
+                        "trophies": 627
+                    }
+                }
+            ]
+        ]
+    }
+}

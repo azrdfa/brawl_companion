@@ -1,0 +1,91 @@
+{
+    "battleTime": "20210203T051922.000Z",
+    "event": {
+        "id": 15000050,
+        "mode": "brawlBall",
+        "map": "Sneaky Fields"
+    },
+    "battle": {
+        "mode": "brawlBall",
+        "type": "ranked",
+        "result": "defeat",
+        "duration": 110,
+        "trophyChange": -4,
+        "starPlayer": {
+            "tag": "#2JQPQU89U",
+            "name": "Leon crow",
+            "brawler": {
+                "id": 16000029,
+                "name": "BEA",
+                "power": 5,
+                "trophies": 332
+            }
+        },
+        "teams": [
+            [
+                {
+                    "tag": "#2UG2PG2QR",
+                    "name": "Yeetmaster",
+                    "brawler": {
+                        "id": 16000006,
+                        "name": "BARLEY",
+                        "power": 7,
+                        "trophies": 278
+                    }
+                },
+                {
+                    "tag": "#8GRC9U99",
+                    "name": "ketakketak",
+                    "brawler": {
+                        "id": 16000008,
+                        "name": "NITA",
+                        "power": 6,
+                        "trophies": 311
+                    }
+                },
+                {
+                    "tag": "#29JPUYVP9",
+                    "name": "어쩌라고",
+                    "brawler": {
+                        "id": 16000034,
+                        "name": "JACKY",
+                        "power": 4,
+                        "trophies": 291
+                    }
+                }
+            ],
+            [
+                {
+                    "tag": "#RLPRURQC",
+                    "name": "Budwik",
+                    "brawler": {
+                        "id": 16000017,
+                        "name": "TARA",
+                        "power": 4,
+                        "trophies": 164
+                    }
+                },
+                {
+                    "tag": "#G99LP0Q0",
+                    "name": "Moist Kat",
+                    "brawler": {
+                        "id": 16000011,
+                        "name": "MORTIS",
+                        "power": 6,
+                        "trophies": 361
+                    }
+                },
+                {
+                    "tag": "#2JQPQU89U",
+                    "name": "Leon crow",
+                    "brawler": {
+                        "id": 16000029,
+                        "name": "BEA",
+                        "power": 5,
+                        "trophies": 332
+                    }
+                }
+            ]
+        ]
+    }
+}
