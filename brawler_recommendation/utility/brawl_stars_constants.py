@@ -35,9 +35,13 @@ TROPHY_CONDITION = {
     "total_condition": 31
 }
 
-GAME_MODES = [
-    "hotZone", "gemGrab", "soloShowdown", "duoShowdown",
-    "heist", "bounty", "brawlBall", "siege"
+TEAM_GAME_MODES = [
+    "hotZone", "gemGrab", "heist", 
+    "bounty", "brawlBall", "siege"
+]
+
+SHOWDOWN_GAME_MODES = [
+    "soloShowdown", "duoShowdown"
 ]
 
 GAME_TYPES = [

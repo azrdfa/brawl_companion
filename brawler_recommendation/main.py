@@ -1,5 +1,7 @@
 from utility.brawl_stars_api import get_request, MultipleRequest
-from utility.brawl_stars_constants import GAME_MODES as gm, GAME_TYPES as gt
+from utility.brawl_stars_constants import TEAM_GAME_MODES as tgm
+from utility.brawl_stars_constants import SHOWDOWN_GAME_MODES as sgm
+from utility.brawl_stars_constants import GAME_TYPES as gt
 from datetime import datetime
 from tabulate import tabulate
 
@@ -58,55 +60,44 @@ for battle_log in battle_log_success_responses:
                 continue
             else:
                 recognized_battle += 1    
-            
-            if battle_mode in gm and battle_type in gt:
+
+            if (battle_mode in tgm or battle_mode in sgm) and battle_type in gt:
                 recognized_battle_mode_type += 1
                 battle_record = None
                 map_dict = add_battle_placeholder(battle_mode, battle_map, battle_time, map_dict.copy())
-                if battle_mode == "hotZone":
+                if battle_mode in tgm:
                     battle_record = battle["battle"]["starPlayer"]["tag"]
-                elif battle_mode == "gemGrab":
-                    battle_record = battle["battle"]["starPlayer"]["tag"]
-                elif battle_mode == "soloShowdown":
-                    battle_rank = battle["battle"]["rank"]
-                    battle_players = battle["battle"]["players"]
-                    for player in battle_players:
-                        if player["tag"] == battle_log_player_tag:
-                            break
-                    battle_brawler = player["brawler"]["name"]
-                    battle_record = {
-                        "rank": battle_rank,
-                        "brawler": battle_brawler
-                    }
-                elif battle_mode == "duoShowdown":
-                    battle_rank = battle["battle"]["rank"]
-                    battle_teams = battle["battle"]["teams"]
-                    for team in battle_teams:
-                        team_has_been_found = False
-                        for player in team:
+                elif battle_mode in sgm:
+                    if battle_mode == "soloShowdown":
+                        battle_rank = battle["battle"]["rank"]
+                        battle_players = battle["battle"]["players"]
+                        for player in battle_players:
                             if player["tag"] == battle_log_player_tag:
-                                team_has_been_found = True
                                 break
-                        if team_has_been_found:
-                            break
-                    battle_brawler = [player["brawler"]["name"] for player in team]
-                    battle_record = {
-                        "rank": battle_rank,
-                        "brawler": battle_brawler
-                    }
-                elif battle_mode == "heist":
-                    battle_record = battle["battle"]["starPlayer"]["tag"]
-                elif battle_mode == "bounty":
-                    battle_record = battle["battle"]["starPlayer"]["tag"]
-                elif battle_mode == "brawlBall":
-                    battle_record = battle["battle"]["starPlayer"]["tag"]
-                elif battle_mode == "siege":
-                    battle_record = battle["battle"]["starPlayer"]["tag"]
-                
+                        battle_brawler = player["brawler"]["name"]
+                        battle_record = {
+                            "rank": battle_rank,
+                            "brawler": battle_brawler
+                        }
+                    elif battle_mode == "duoShowdown":
+                        battle_rank = battle["battle"]["rank"]
+                        battle_teams = battle["battle"]["teams"]
+                        for team in battle_teams:
+                            team_has_been_found = False
+                            for player in team:
+                                if player["tag"] == battle_log_player_tag:
+                                    team_has_been_found = True
+                                    break
+                            if team_has_been_found:
+                                break
+                        battle_brawler = [player["brawler"]["name"] for player in team]
+                        battle_record = {
+                            "rank": battle_rank,
+                            "brawler": battle_brawler
+                        }
                 map_dict[battle_mode][battle_map][battle_time].append(
                     battle_record
                 )
-                
             else:
                 message = f"Unrecognized battle mode or type: ({battle_mode}, {battle_type})"
                 unrecognized_battle_mode_type.append(message)
@@ -151,3 +142,16 @@ os.makedirs(os.path.dirname(log_error_filename), exist_ok=True)
 with open(log_error_filename, "w") as text_file:
     text_file.write("\n".join(full_error_message))
 print(f"Full error message available at {log_error_filename}")
+
+for mode in map_dict.keys():
+    if mode not in sgm:
+        for map in map_dict[mode].keys():
+            for time in map_dict[mode][map].keys():
+                star_players = map_dict[mode][map][time]
+                if len(star_players) > 1:
+                    tmp_star_players = []
+                    for star_player in star_players:
+                        if star_player not in tmp_star_players:
+                            tmp_star_players.append(star_player)
+                    star_players = tmp_star_players
+                    
