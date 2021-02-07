@@ -1,5 +1,5 @@
 from utility.brawl_stars_api import get_request, MultipleRequest
-from utility.brawl_stars_constants import GAME_MODES as gm
+from utility.brawl_stars_constants import GAME_MODES as gm, GAME_TYPES as gt
 from datetime import datetime
 from tabulate import tabulate
 
@@ -59,7 +59,7 @@ for battle_log in battle_log_success_responses:
             else:
                 recognized_battle += 1    
             
-            if battle_mode in gm and battle_type == "ranked":
+            if battle_mode in gm and battle_type in gt:
                 recognized_battle_mode_type += 1
                 battle_record = None
                 map_dict = add_battle_placeholder(battle_mode, battle_map, battle_time, map_dict.copy())
@@ -140,13 +140,14 @@ for i in range(len(unrecognized_battle)):
     full_error_message.append(f"{i+1}. {unrecognized_battle[i]}")
 
 print("="*71)
-print(f"{recognized_battle_mode_type} recognized battle mode")
-print(f"{len(unrecognized_battle_mode_type)} unrecognized_battle_mode_type")
+print(f"{recognized_battle_mode_type} recognized battle mode or type")
+print(f"{len(unrecognized_battle_mode_type)} unrecognized battle mode or type")
 full_error_message.append("="*71)
 for i in range(len(unrecognized_battle_mode_type)):
     full_error_message.append(f"{i+1}. {unrecognized_battle_mode_type[i]}")
 
-log_error_filename = "./log/error/brawler_recommendation/" + time_stamp_str + ".txt"
+log_error_filename = "./log/brawler_recommendation_" + time_stamp_str + ".txt"
+os.makedirs(os.path.dirname(log_error_filename), exist_ok=True)
 with open(log_error_filename, "w") as text_file:
     text_file.write("\n".join(full_error_message))
 print(f"Full error message available at {log_error_filename}")

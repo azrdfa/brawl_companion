@@ -39,3 +39,7 @@ GAME_MODES = [
     "hotZone", "gemGrab", "soloShowdown", "duoShowdown",
     "heist", "bounty", "brawlBall", "siege"
 ]
+
+GAME_TYPES = [
+    "ranked", "proLeague"
+]
