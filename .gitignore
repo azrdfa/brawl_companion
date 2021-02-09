@@ -1,4 +1,4 @@
-bsenv
+env
 .env
 __pycache__
 game_modes_json
