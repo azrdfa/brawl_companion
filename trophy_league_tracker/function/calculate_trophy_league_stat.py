@@ -1,15 +1,13 @@
-from utility.brawl_stars_constants import TROPHY_CONDITIONS
-
-def calculate_trophy_league_stat(result):
+def calculate_trophy_league_stat(input, trophy_conditions):
     ttl = 0 # total_trophy_lost
     tspr = 0 # total_star_point_reward
     btl = [] # brawler_trophy_lost
-    brawlers = result["brawlers"]
+    brawlers = input["brawlers"]
     for brawler in brawlers:
         brawler_name = brawler["name"]
         brawler_trophy = brawler["trophies"]
         if brawler_trophy > 500:
-            for trophy_condition in TROPHY_CONDITIONS:
+            for trophy_condition in trophy_conditions:
                 ctra = trophy_condition["trophy_range"] # condition_trophy_range
                 cspr = trophy_condition["star_point_reward"] # condition_star_point_reward
                 ctre = trophy_condition["trophy_reset"] # condition_trophy_reset
